@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Raghad Portfolio</title>
+
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <!-- Vue -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+
+<body>
+
+<div id="app">
+
+  <!-- HEADER -->
+  <header id="header">
+
+ <header class="navbar">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- LEFT -->
+  <div class="nav-left">
+    <h2 class="brand-name">Raghad ✦</h2>
+  </div>
+
+  <nav class="nav-links">
+    <a href="#skills">My skills</a>
+    <a href="#portfolio">Work Experience</a>
+    <a href="#contact">Contact</a>
+<a href="https://drive.google.com/uc?export=download&id=1t-Dj31xXA5TQGzWfC6ppj5-j2WoOxUBW" target="_blank">
+  CV
+</a>
+  </nav>
+
+</header>
+
+  <!-- ABOUT -->
+<section id="about">
+  <div class="about-center">
+
+    <img :src="aboutImage" class="about-img">
+
+    <h1>About Me</h1>
+
+    <h3>{{ title }}</h3>
+
+    <p>{{ about }}</p>
+
+  </div>
+</section>
+  <!-- SKILLS -->
+ <section id="skills">
+  <h1 class="skills-title">My Skills</h1>
+
+  <div class="skills-container">
+
+    <div class="skill-card">
+      <i class="fa-brands fa-figma"></i>
+      <h2>UI/UX Design</h2>
+      <p>
+Designing intuitive and user-friendly interfaces with a focus on usability and clarity.
+</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-code"></i>
+      <h2>Front-End Development</h2>
+      <p>
+        Building clean and responsive interfaces
+        using modern front-end technologies.
+      </p>
+      
+    </div>
+
+  </div>
+</section>
+  <!-- PORTFOLIO -->
+ <section id="work">
+  <h1 class="work-title">My work</h1>
+
+  <div class="work-container">
+
+    <!-- CARD 1 -->
+    <div class="work-card">
+      <img src="images/figma.png">
+      <h3>Beauty Booking</h3>
+      <p>
+        A modern booking application designed to enhance the salon appointment experience through thoughtful UI/UX design
+      </p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="work-card">
+      <img src="images/front.jpg">
+      <h3>Student Nutrition Web Page</h3>
+      <p>
+       Student Nutrition Web Page – Course Project A front-end web project developed to display nutritional data using a structured and user-friendly interface
+      </p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="work-card">
+      <img src="images/figma2.png">
+      <h3>Graduation Project – Figma Prototype</h3>
+      <p>
+        Graduation Project – Figma Prototype A UI/UX graduation project designed and prototyped using Figma
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- CERTIFICATES -->
+ <section id="certificates">
+  <h1 class="cert-title">Certificates</h1>
+
+  <div class="cert-container">
+
+    <img src="images/Image%20(2).jpg" alt="certificate">
+
+    <img src="images/Image%20(4).jpg" alt="certificate">
+
+  </div>
+</section>
+  <!-- CONTACT -->
+ <section id="contact">
+  <div class="contact-box">
+
+    <h1>Contact Me</h1>
+
+    <!-- ICONS -->
+    <div class="contact-icons">
+      <a href="https://github.com/yourusername" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="tel:+966XXXXXXXXX">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+
+      <a href="https://linkedin.com" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+
+    
+    <img 
+      src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://drive.google.com/file/d/1t-Dj31xXA5TQGzWfC6ppj5-j2WoOxUBW/view"
+      class="cv-qr"
+    >
+
+    <p>© 2026 Raghad . All rights reserved.</p>
+
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
